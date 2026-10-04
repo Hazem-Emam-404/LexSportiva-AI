@@ -11,7 +11,7 @@ export default function Navbar({ currentView, setView, onNewChat }) {
           className="nav-brand-img"
         />
         <div className="nav-brand-title">
-          Sports AI <span className="text-gradient-cyan">Referee</span>
+          LexSportiva<span className="text-gradient-cyan">-AI</span>
           <span className="nav-brand-badge">Official</span>
         </div>
       </div>

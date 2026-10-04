@@ -56,8 +56,7 @@ export default function LandingPage({ onStartChat, onOpenPdf }) {
           </div>
 
           <h1 className="hero-title">
-            The Official <br />
-            <span className="text-gradient-cyan">Sports Rules</span> <br />
+            <span className="text-gradient-cyan">LexSportiva</span> <br />
             AI Referee
           </h1>
 
@@ -83,13 +82,13 @@ export default function LandingPage({ onStartChat, onOpenPdf }) {
           <div className="hero-avatar-card">
             <img
               src="/images/referee_avatar.jpg"
-              alt="AI Referee Official Character"
+              alt="LexSportiva AI Referee"
               className="hero-avatar-img"
             />
             <div className="hero-avatar-badge">
               <div>
-                <div style={{ fontSize: '0.95rem', fontWeight: 800 }}>AI Referee 01</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-sub)' }}>Hybrid RAG Assistant</div>
+                <div style={{ fontSize: '0.95rem', fontWeight: 800 }}>LexSportiva-AI</div>
+                <div style={{ fontSize: '0.75rem', color: 'var(--text-sub)' }}>Official Rules Referee</div>
               </div>
               <div className="avatar-badge-status">
                 <span className="status-dot"></span>

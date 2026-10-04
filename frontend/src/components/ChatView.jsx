@@ -211,7 +211,7 @@ export default function ChatView({
 
             <span className="chat-active-title">
               {activeConvId
-                ? conversations.find((c) => c.id === activeConvId)?.title || 'Sports Rules Chat'
+                ? conversations.find((c) => c.id === activeConvId)?.title || 'LexSportiva Chat'
                 : 'New Officiating Consultation'}
             </span>
           </div>

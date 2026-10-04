@@ -22,7 +22,7 @@ async def lifespan(app: FastAPI):
     yield
 
 
-app = FastAPI(title="Sports Rules RAG API", lifespan=lifespan)
+app = FastAPI(title="LexSportiva-AI", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
