@@ -1,0 +1,250 @@
+[
+  {
+    "question_id": "football_01",
+    "file_name": "Football",
+    "question": "What is the minimum number of players a team must have on the field for a match to start or continue?",
+    "ground_truth": "A match may not start or continue if either team has fewer than seven players.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": []
+  },
+  {
+    "question_id": "football_02",
+    "file_name": "Football",
+    "question": "What is the maximum permitted duration for the half-time interval?",
+    "ground_truth": "Players are entitled to an interval at half-time, not exceeding 15 minutes.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance":[],
+    "advanced_relevance":[]
+  },
+  {
+    "question_id": "football_03",
+    "file_name": "Football",
+    "question": "From which three specific match restarts can a player receive the ball directly without committing an offside offence?",
+    "ground_truth": "There is no offside offence if a player receives the ball directly from a goal kick, a throw-in, or a corner kick.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance":[],
+    "advanced_relevance":[]
+  },
+  {
+    "question_id": "football_04",
+    "file_name": "Football",
+    "question": "If an attacking player in an offside position is moving towards the ball with the intention of playing it and is fouled by an opponent before playing or attempting to play the ball, how must the referee decide between the offside and the foul, and what is the restart?",
+    "ground_truth": "The foul is penalised because it occurred before the offside offence, as the attacker had not yet played or attempted to play the ball, or challenged an opponent. Play is restarted with a direct free kick (or a penalty kick if committed inside the penalty area) in accordance with Law 12.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance":[],
+    "advanced_relevance":[]
+  },
+  {
+    "question_id": "football_05",
+    "file_name": "Football",
+    "question": "If a goalkeeper takes a goal kick and deliberately handles the ball inside their own penalty area a second time before another player has touched it, denying the opposing team an obvious goal-scoring opportunity, what disciplinary sanction is applied and how is play restarted?",
+    "ground_truth": "The goalkeeper is sent off (shown a red card) for denying an obvious goal-scoring opportunity (DOGSO), because the violation is illegally playing the ball a second time after a restart. However, because the illegal second touch with the hand occurred inside the goalkeeper's own penalty area, play restarts with an indirect free kick rather than a penalty kick.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "handball_01",
+    "file_name": "Handball",
+    "question": "What are the exact dimensions of a standard indoor handball playing court?",
+    "ground_truth": "The playing court is a rectangle measuring 40 metres long and 20 metres wide.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "handball_02",
+    "file_name": "Handball",
+    "question": "What is the maximum duration a player is permitted to hold the ball?",
+    "ground_truth": "A player is permitted to hold the ball for a maximum of 3 seconds, even when it is lying on the floor.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "handball_03",
+    "file_name": "Handball",
+    "question": "What is the minimum number of players a team must have on the court at the start of the game?",
+    "ground_truth": "A team must have at least 5 players on the court at the start of the game.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "handball_04",
+    "file_name": "Handball",
+    "question": "If a court player from the defending team clearly steps into the goal area without the ball and thereby destroys a clear chance of scoring, what is the correct decision?",
+    "ground_truth": "The referees must award a 7-metre throw to the attacking team.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "handball_05",
+    "file_name": "Handball",
+    "question": "If the final signal sounds exactly when a free throw is being executed, and the defending team wants to make a substitution before the throw is retaken, what specific restriction applies?",
+    "ground_truth": "The defending team is only allowed to substitute a court player for a goalkeeper if they are currently playing without a goalkeeper when the final signal is given.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "basketball_01",
+    "file_name": "Basketball",
+    "question": "What are the official dimensions of a standard basketball court?",
+    "ground_truth": "The court shall have a flat, hard surface free from obstructions with dimensions of 28 m in length by 15 m in width measured from the inner edge of the boundary line.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "basketball_02",
+    "file_name": "Basketball",
+    "question": "How many quarters are in a standard basketball game, and how long does each quarter last?",
+    "ground_truth": "The game shall consist of 4 quarters of 10 minutes each.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "basketball_03",
+    "file_name": "Basketball",
+    "question": "How much time does a team have to attempt a shot for a goal after gaining control of a live ball on the court?",
+    "ground_truth": "The team must attempt a shot for a goal within 24 seconds.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "basketball_04",
+    "file_name": "Basketball",
+    "question": "If a defensive player commits a personal foul against an opponent who is not in the act of shooting in their frontcourt, and the shot clock displays 12 seconds, how is the game resumed and what happens to the shot clock?",
+    "ground_truth": "The game shall be resumed with a throw-in by the non-offending team from the place nearest to the infraction. Because the throw-in is administered in the frontcourt and 13 seconds or less are displayed on the shot clock at the time when the game was stopped, the shot clock shall be reset to 14 seconds.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "basketball_05",
+    "file_name": "Basketball",
+    "question": "If a defensive player commits a goaltending violation during a last free throw, what points are awarded, what foul is charged, and what is the subsequent penalty?",
+    "ground_truth": "1 point shall be awarded to the offensive team, followed by a category 2 technical foul penalty charged against the defensive player. The opponents shall be awarded 1 free throw, and the game shall be resumed by the team which had control of the ball or was entitled to the ball when the technical foul was committed.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "file_name": "Tennis",
+    "question_id": "tennis_01",
+    "question": "What are the standard length and width dimensions for singles and doubles tennis courts?",
+    "ground_truth": "The court shall be a rectangle 78 feet (23.77 m) long. For singles matches, the court is 27 feet (8.23 m) wide, and for doubles matches, it is 36 feet (10.97 m) wide.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "file_name": "Tennis",
+    "question_id": "tennis_02",
+    "question": "What is the maximum amount of time allowed between points during a match?",
+    "ground_truth": "Between points, a maximum of twenty-five (25) seconds is allowed.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "tennis_03",
+    "file_name": "Tennis",
+    "question": "At what specific points during a set are players required to change ends of the court?",
+    "ground_truth": "The players shall change ends at the end of the first, third and every subsequent odd game of each set, as well as at the end of each set unless the total number of games in that set is even.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "tennis_04",
+    "file_name": "Tennis",
+    "question": "If a player serves out of turn during a standard game and commits a service fault before the error is discovered, who must serve next and what happens to the recorded fault?",
+    "ground_truth": "The player who was originally due to serve shall take over serving as soon as the error is discovered. A fault that was served by the incorrect server before the error was discovered shall not stand.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "tennis_05",
+    "file_name": "Tennis",
+    "question": "How does the ruling differ if a ball hits a singles stick and lands in the correct court during a regular rally, versus if the ball hits the singles stick during a serve?",
+    "ground_truth": "If a ball in play during a rally hits a singles stick and lands in the correct court, it is considered a good return. However, if a served ball hits a singles stick before hitting the correct service court, it is ruled a service fault.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "boxing_01",
+    "file_name": "Boxing",
+    "question": "What are the specified durations for rounds across the different age categories in World Boxing Competitions?",
+    "ground_truth": "The duration of the rounds is three (3) minutes for Elite and U19 Age Category Competitions, and two (2) minutes for U17 Age Category Competitions.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "boxing_02",
+    "file_name": "Boxing",
+    "question": "How many Seconds are permitted to accompany a Boxer, and what are their specific access limits during rest periods?",
+    "ground_truth": "Up to three (3) Seconds can accompany a Boxer in the corner during a Bout. However, only two (2) Seconds may mount the apron of the ring and only one (1) may enter the ring during rest periods between rounds.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "boxing_03",
+    "file_name": "Boxing",
+    "question": "What is the required weight for the boxing gloves used by Elite Women Boxers?",
+    "ground_truth": "Ten (10) oz gloves will be used for all Women's Age and Weight Categories.",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "boxing_04",
+    "file_name": "Boxing",
+    "question": "If a Boxer is pushed out of the ring, how much time are they allowed to return, and what happens if the Ringside Doctor subsequently declares them unfit to continue?",
+    "ground_truth": "In the case of a Boxer being pushed out of the ring, the Boxer must be allowed sixty (60) seconds to come back into the ring. If the Boxer enters the ring but does not look fit, the Referee will ask the Ringside Doctor to examine the Boxer. If the Ringside Doctor declares that the Boxer is unfit to continue, the opponent of the Boxer will lose by disqualification (DSQ).",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  },
+  {
+    "question_id": "boxing_05",
+    "file_name": "Boxing",
+    "question": "If a Boxer suffers a low blow and the referee conducts an Eight Count due to the boxer's complaints, what is the maximum recovery time granted, and what is the Bout decision if the boxer remains unfit to continue after this period?",
+    "ground_truth": "The Referee gives a maximum of one minute and 30 seconds (90 seconds) for the offended Boxer to recover if the Boxer is unfit to continue following the initial Eight Count. If the offended Boxer is still unfit to continue after this period, the Referee declares the opponent the winner of the Bout by Referee Stops Contest - Injury (RSC-I).",
+    "normal_retriever_context": [],
+    "advanced_retriever_context": [],
+    "normal_relevance": [],
+    "advanced_relevance": []
+  }
+]

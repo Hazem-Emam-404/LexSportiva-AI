@@ -1,0 +1,43 @@
+# Environment variables and secret keys (CRITICAL: NEVER COMMIT)
+.env
+.env.*
+*.env
+!.env.example
+
+# Vector databases and persistent document stores
+sports_chroma_db_parent_child/
+sports_parent_docs/
+chroma.sqlite3
+*.sqlite3
+*.db
+
+# Pickled data and serialized binaries
+*.pkl
+*.pickle
+*.parquet
+
+# Python bytecode, builds, and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebook checkpoints & autosaves
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and OS metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

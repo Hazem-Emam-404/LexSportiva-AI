@@ -1,0 +1,12 @@
+,Normal Retriever,Advanced Retriever
+MRR,0.7804,0.8638
+MAP,0.4622,0.5208
+Precision@1,0.6,0.72
+Recall@1,0.341,0.3967
+nDCG@1,0.6522,0.7826
+Precision@3,0.3333,0.3867
+Recall@3,0.5084,0.5981
+nDCG@3,0.5793,0.6655
+Precision@5,0.2553,0.2787
+Recall@5,0.5664,0.6043
+nDCG@5,0.5692,0.6352
