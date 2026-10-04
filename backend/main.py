@@ -7,6 +7,8 @@ from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 load_dotenv()
 
 from utils import map_sport_to_filename, DEFAULT_FILES_DIR
@@ -30,12 +32,12 @@ app.add_middleware(
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["X-User-ID", "*"],
 )
 
 
-
 def resolve_user_id(request: Request, response: Response) -> str:
-    user_id = request.cookies.get("sports_user_id") or request.headers.get("X-User-ID")
+    user_id = request.headers.get("X-User-ID") or request.cookies.get("sports_user_id")
     if not user_id:
         user_id = f"usr_{uuid.uuid4().hex[:12]}"
         response.set_cookie(
@@ -43,9 +45,12 @@ def resolve_user_id(request: Request, response: Response) -> str:
             value=user_id,
             max_age=365 * 24 * 3600,
             httponly=False,
-            samesite="lax",
+            samesite="none",
+            secure=True,
         )
+    response.headers["X-User-ID"] = user_id
     return user_id
+
 
 
 class ChatRequest(BaseModel):
@@ -109,7 +114,10 @@ async def chat(data: ChatRequest, request: Request, response: Response):
 
     history_records = db.get_conversation_messages(conv_id, user_id)
     if history_records is None:
-        raise HTTPException(status_code=404, detail="Conversation not found")
+        conv = db.create_conversation(user_id, title=message[:40])
+        conv_id = conv["id"]
+        history_records = []
+
 
     chat_history = [{"role": m["role"], "content": m["content"]} for m in history_records]
 

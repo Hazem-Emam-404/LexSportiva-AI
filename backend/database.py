@@ -61,16 +61,22 @@ def list_conversations(user_id: str) -> List[Dict[str, Any]]:
         return [dict(r) for r in rows]
 
 
-def get_conversation_messages(conversation_id: str, user_id: str) -> Optional[List[Dict[str, Any]]]:
+def get_conversation_messages(conversation_id: str, user_id: Optional[str] = None) -> Optional[List[Dict[str, Any]]]:
     with get_connection() as conn:
-        conv = conn.cursor().execute(
-            "SELECT id FROM conversations WHERE id = ? AND user_id = ?",
-            (conversation_id, user_id),
+        cursor = conn.cursor()
+        conv = cursor.execute(
+            "SELECT id, user_id FROM conversations WHERE id = ?",
+            (conversation_id,),
         ).fetchone()
         if not conv:
             return None
 
-        rows = conn.cursor().execute(
+        # Re-bind conversation to current user_id if it differs (e.g. cross-origin session sync)
+        if user_id and conv["user_id"] != user_id:
+            cursor.execute("UPDATE conversations SET user_id = ? WHERE id = ?", (user_id, conversation_id))
+            conn.commit()
+
+        rows = cursor.execute(
             "SELECT id, role, content, citations, created_at FROM messages WHERE conversation_id = ? ORDER BY created_at ASC",
             (conversation_id,),
         ).fetchall()
@@ -81,6 +87,7 @@ def get_conversation_messages(conversation_id: str, user_id: str) -> Optional[Li
             m["citations"] = json.loads(m["citations"]) if m["citations"] else []
             messages.append(m)
         return messages
+
 
 
 def add_message(conversation_id: str, role: str, content: str, citations: Optional[List[Dict[str, Any]]] = None) -> Dict[str, Any]:

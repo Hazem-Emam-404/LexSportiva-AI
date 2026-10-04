@@ -4,6 +4,8 @@ import asyncio
 from typing import List, Dict, Optional, Any, Tuple
 from dotenv import load_dotenv
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+load_dotenv(os.path.join(BASE_DIR, ".env"))
 load_dotenv()
 
 from pydantic import BaseModel, Field
